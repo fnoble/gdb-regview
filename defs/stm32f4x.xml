@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE model SYSTEM "embsysregview.dtd">
+<model chipname="STM32F4x">
+  <chip_description>Works for STM32F4x (Cortex - M4)</chip_description>
+  <boards>
+  	<board id="STM32F4DISCOVERY" name="STM32F4DISCOVERY" designer="STM"/>
+  </boards>
+  <group name="GPIO" description="">
+    <registergroup name="GPIOD" description="">
+      <register name="GPIOD_MODER" description="GPIO port mode register" address="0x40020C00" access="rw">
+      	<field bitoffset="0" name="MODER0" bitlength="2">
+      		<description>Port D configuration bits
+These bits are written by software to configure the I/O direction mode.
+00: Input (reset state)
+01: General purpose output mode
+10: Alternate function mode
+11: Analog mode
+      		</description>
+      		<interpretation key="0" text="Input (reset state)"/>
+      		<interpretation key="1" text="General purpose output mode"/>
+      		<interpretation key="2" text="Alternate function mode"/>
+      		<interpretation key="3" text="Analog mode"/>
+      	</field>
+      	<field bitoffset="2" name="MODER1" bitlength="2">      		
+      	<description>Port D configuration bits
+These bits are written by software to configure the I/O direction mode.
+00: Input (reset state)
+01: General purpose output mode
+10: Alternate function mode
+11: Analog mode
+      		</description>
+      		<interpretation key="0" text="Input (reset state)"/>
+      		<interpretation key="1" text="General purpose output mode"/>
+      		<interpretation key="2" text="Alternate function mode"/>
+      		<interpretation key="3" text="Analog mode"/>
+      	</field>
+      	<field bitoffset="4" name="MODER2" bitlength="2">      		
+      	<description>Port D configuration bits
+These bits are written by software to configure the I/O direction mode.
+00: Input (reset state)
+01: General purpose output mode
+10: Alternate function mode
+11: Analog mode
+      		</description>
+      		<interpretation key="0" text="Input (reset state)"/>
+      		<interpretation key="1" text="General purpose output mode"/>
+      		<interpretation key="2" text="Alternate function mode"/>
+      		<interpretation key="3" text="Analog mode"/>
+      	</field>
+      	<field bitoffset="6" name="MODER3" bitlength="2">      		
+      	<description>Port D configuration bits
+These bits are written by software to configure the I/O direction mode.
+00: Input (reset state)
+01: General purpose output mode
+10: Alternate function mode
+11: Analog mode
+      		</description>
+      		<interpretation key="0" text="Input (reset state)"/>
+      		<interpretation key="1" text="General purpose output mode"/>
+      		<interpretation key="2" text="Alternate function mode"/>
+      		<interpretation key="3" text="Analog mode"/>
+      	</field>
+      	<field bitoffset="8" name="MODER4" bitlength="2">      		
+      	<description>Port D configuration bits
+These bits are written by software to configure the I/O direction mode.
+00: Input (reset state)
+01: General purpose output mode
+10: Alternate function mode
+11: Analog mode
+      		</description>
+      		<interpretation key="0" text="Input (reset state)"/>
+      		<interpretation key="1" text="General purpose output mode"/>
+      		<interpretation key="2" text="Alternate function mode"/>
+      		<interpretation key="3" text="Analog mode"/>
+      	</field>
+      	<field bitoffset="10" name="MODER5" bitlength="2">      		
+      	<description>Port D configuration bits
+These bits are written by software to configure the I/O direction mode.
+00: Input (reset state)
+01: General purpose output mode
+10: Alternate function mode
+11: Analog mode
+      		</description>
+      		<interpretation key="0" text="Input (reset state)"/>
+      		<interpretation key="1" text="General purpose output mode"/>
+      		<interpretation key="2" text="Alternate function mode"/>
+      		<interpretation key="3" text="Analog mode"/>
+      	</field>
+      	<field bitoffset="12" name="MODER6" bitlength="2">      		
+      	<description>Port D configuration bits
+These bits are written by software to configure the I/O direction mode.
+00: Input (reset state)
+01: General purpose output mode
+10: Alternate function mode
+11: Analog mode
+      		</description>
+      		<interpretation key="0" text="Input (reset state)"/>
+      		<interpretation key="1" text="General purpose output mode"/>
+      		<interpretation key="2" text="Alternate function mode"/>
+      		<interpretation key="3" text="Analog mode"/>
+      	</field>
+      	<field bitoffset="14" name="MODER7" bitlength="2">      		
+      	<description>Port D configuration bits
+These bits are written by software to configure the I/O direction mode.
+00: Input (reset state)
+01: General purpose output mode
+10: Alternate function mode
+11: Analog mode
+      		</description>
+      		<interpretation key="0" text="Input (reset state)"/>
+      		<interpretation key="1" text="General purpose output mode"/>
+      		<interpretation key="2" text="Alternate function mode"/>
+      		<interpretation key="3" text="Analog mode"/>
+      	</field>
+      	<field bitoffset="16" name="MODER8" bitlength="2">      		
+      	<description>Port D configuration bits
+These bits are written by software to configure the I/O direction mode.
+00: Input (reset state)
+01: General purpose output mode
+10: Alternate function mode
+11: Analog mode
+      		</description>
+      		<interpretation key="0" text="Input (reset state)"/>
+      		<interpretation key="1" text="General purpose output mode"/>
+      		<interpretation key="2" text="Alternate function mode"/>
+      		<interpretation key="3" text="Analog mode"/>
+      	</field>
+      	<field bitoffset="18" name="MODER9" bitlength="2">      		
+      	<description>Port D configuration bits
+These bits are written by software to configure the I/O direction mode.
+00: Input (reset state)
+01: General purpose output mode
+10: Alternate function mode
+11: Analog mode
+      		</description>
+      		<interpretation key="0" text="Input (reset state)"/>
+      		<interpretation key="1" text="General purpose output mode"/>
+      		<interpretation key="2" text="Alternate function mode"/>
+      		<interpretation key="3" text="Analog mode"/>
+      	</field>
+      	<field bitoffset="20" name="MODER10" bitlength="2">      		
+      	<description>Port D configuration bits
+These bits are written by software to configure the I/O direction mode.
+00: Input (reset state)
+01: General purpose output mode
+10: Alternate function mode
+11: Analog mode
+      		</description>
+      		<interpretation key="0" text="Input (reset state)"/>
+      		<interpretation key="1" text="General purpose output mode"/>
+      		<interpretation key="2" text="Alternate function mode"/>
+      		<interpretation key="3" text="Analog mode"/>
+      	</field>
+      	<field bitoffset="22" name="MODER11" bitlength="2">      		
+      	<description>Port D configuration bits
+These bits are written by software to configure the I/O direction mode.
+00: Input (reset state)
+01: General purpose output mode
+10: Alternate function mode
+11: Analog mode
+      		</description>
+      		<interpretation key="0" text="Input (reset state)"/>
+      		<interpretation key="1" text="General purpose output mode"/>
+      		<interpretation key="2" text="Alternate function mode"/>
+      		<interpretation key="3" text="Analog mode"/>
+      	</field>
+      	<field bitoffset="24" name="MODER12" bitlength="2">      		
+      	<description>Port D configuration bits
+These bits are written by software to configure the I/O direction mode.
+00: Input (reset state)
+01: General purpose output mode
+10: Alternate function mode
+11: Analog mode
+      		</description>
+      		<interpretation key="0" text="Input (reset state)"/>
+      		<interpretation key="1" text="General purpose output mode"/>
+      		<interpretation key="2" text="Alternate function mode"/>
+      		<interpretation key="3" text="Analog mode"/>
+      	</field>
+      	<field bitoffset="26" name="MODER13" bitlength="2">      		
+      	<description>Port D configuration bits
+These bits are written by software to configure the I/O direction mode.
+00: Input (reset state)
+01: General purpose output mode
+10: Alternate function mode
+11: Analog mode
+      		</description>
+      		<interpretation key="0" text="Input (reset state)"/>
+      		<interpretation key="1" text="General purpose output mode"/>
+      		<interpretation key="2" text="Alternate function mode"/>
+      		<interpretation key="3" text="Analog mode"/>
+      	</field>
+      	<field bitoffset="28" name="MODER14" bitlength="2">      		
+      	<description>Port D configuration bits
+These bits are written by software to configure the I/O direction mode.
+00: Input (reset state)
+01: General purpose output mode
+10: Alternate function mode
+11: Analog mode
+      		</description>
+      		<interpretation key="0" text="Input (reset state)"/>
+      		<interpretation key="1" text="General purpose output mode"/>
+      		<interpretation key="2" text="Alternate function mode"/>
+      		<interpretation key="3" text="Analog mode"/>
+      	</field>
+      	<field bitoffset="30" name="MODER15" bitlength="2">      		
+      	<description>Port D configuration bits
+These bits are written by software to configure the I/O direction mode.
+00: Input (reset state)
+01: General purpose output mode
+10: Alternate function mode
+11: Analog mode
+      		</description>
+      		<interpretation key="0" text="Input (reset state)"/>
+      		<interpretation key="1" text="General purpose output mode"/>
+      		<interpretation key="2" text="Alternate function mode"/>
+      		<interpretation key="3" text="Analog mode"/>
+      	</field>
+      </register>
+      <register name="GPIOD_OTYPER" description="GPIO port output type register" address="0x40020C04" access="rw">
+      	<field bitoffset="0" name="OT0" bitlength="1">
+      		<description>Port D output type configuration bits
+These bits are written by software to configure the output type of the I/O port.
+0: Output push-pull (reset state)
+1: Output open-drain</description>
+			<interpretation key="0" text="Output push-pull (reset state)"/>
+			<interpretation key="1" text="Output open-drain"/>
+      	</field>
+      	<field bitoffset="1" name="OT1" bitlength="1">
+      		<description>Port D output type configuration bits
+These bits are written by software to configure the output type of the I/O port.
+0: Output push-pull (reset state)
+1: Output open-drain</description>
+			<interpretation key="0" text="Output push-pull (reset state)"/>
+			<interpretation key="1" text="Output open-drain"/>
+      	</field>
+      	<field bitoffset="2" name="OT2" bitlength="1">
+      		<description>Port D output type configuration bits
+These bits are written by software to configure the output type of the I/O port.
+0: Output push-pull (reset state)
+1: Output open-drain</description>
+			<interpretation key="0" text="Output push-pull (reset state)"/>
+			<interpretation key="1" text="Output open-drain"/>
+      	</field>
+      	<field bitoffset="3" name="OT3" bitlength="1">
+      		<description>Port D output type configuration bits
+These bits are written by software to configure the output type of the I/O port.
+0: Output push-pull (reset state)
+1: Output open-drain</description>
+			<interpretation key="0" text="Output push-pull (reset state)"/>
+			<interpretation key="1" text="Output open-drain"/>
+      	</field>
+      	<field bitoffset="4" name="OT4" bitlength="1">
+      		<description>Port D output type configuration bits
+These bits are written by software to configure the output type of the I/O port.
+0: Output push-pull (reset state)
+1: Output open-drain</description>
+			<interpretation key="0" text="Output push-pull (reset state)"/>
+			<interpretation key="1" text="Output open-drain"/>
+      	</field>
+      	<field bitoffset="5" name="OT5" bitlength="1">
+      		<description>Port D output type configuration bits
+These bits are written by software to configure the output type of the I/O port.
+0: Output push-pull (reset state)
+1: Output open-drain</description>
+			<interpretation key="0" text="Output push-pull (reset state)"/>
+			<interpretation key="1" text="Output open-drain"/>
+      	</field>
+      	<field bitoffset="6" name="OT6" bitlength="1">
+      		<description>Port D output type configuration bits
+These bits are written by software to configure the output type of the I/O port.
+0: Output push-pull (reset state)
+1: Output open-drain</description>
+			<interpretation key="0" text="Output push-pull (reset state)"/>
+			<interpretation key="1" text="Output open-drain"/>
+      	</field>
+      	<field bitoffset="7" name="OT7" bitlength="1">
+      		<description>Port D output type configuration bits
+These bits are written by software to configure the output type of the I/O port.
+0: Output push-pull (reset state)
+1: Output open-drain</description>
+			<interpretation key="0" text="Output push-pull (reset state)"/>
+			<interpretation key="1" text="Output open-drain"/>
+      	</field>
+      	<field bitoffset="7" name="OT7" bitlength="1">
+      		<description>Port D output type configuration bits
+These bits are written by software to configure the output type of the I/O port.
+0: Output push-pull (reset state)
+1: Output open-drain</description>
+			<interpretation key="0" text="Output push-pull (reset state)"/>
+			<interpretation key="1" text="Output open-drain"/>
+      	</field>
+      	<field bitoffset="8" name="OT8" bitlength="1">
+      		<description>Port D output type configuration bits
+These bits are written by software to configure the output type of the I/O port.
+0: Output push-pull (reset state)
+1: Output open-drain</description>
+			<interpretation key="0" text="Output push-pull (reset state)"/>
+			<interpretation key="1" text="Output open-drain"/>
+      	</field>
+      	<field bitoffset="9" name="OT9" bitlength="1">
+      		<description>Port D output type configuration bits
+These bits are written by software to configure the output type of the I/O port.
+0: Output push-pull (reset state)
+1: Output open-drain</description>
+			<interpretation key="0" text="Output push-pull (reset state)"/>
+			<interpretation key="1" text="Output open-drain"/>
+      	</field>
+      	<field bitoffset="10" name="OT10" bitlength="1">
+      		<description>Port D output type configuration bits
+These bits are written by software to configure the output type of the I/O port.
+0: Output push-pull (reset state)
+1: Output open-drain</description>
+			<interpretation key="0" text="Output push-pull (reset state)"/>
+			<interpretation key="1" text="Output open-drain"/>
+      	</field>
+      	<field bitoffset="11" name="OT11" bitlength="1">
+      		<description>Port D output type configuration bits
+These bits are written by software to configure the output type of the I/O port.
+0: Output push-pull (reset state)
+1: Output open-drain</description>
+			<interpretation key="0" text="Output push-pull (reset state)"/>
+			<interpretation key="1" text="Output open-drain"/>
+      	</field>
+      	<field bitoffset="12" name="OT12" bitlength="1">
+      		<description>Port D output type configuration bits
+These bits are written by software to configure the output type of the I/O port.
+0: Output push-pull (reset state)
+1: Output open-drain</description>
+			<interpretation key="0" text="Output push-pull (reset state)"/>
+			<interpretation key="1" text="Output open-drain"/>
+      	</field>
+      	<field bitoffset="13" name="OT13" bitlength="1">
+      		<description>Port D output type configuration bits
+These bits are written by software to configure the output type of the I/O port.
+0: Output push-pull (reset state)
+1: Output open-drain</description>
+			<interpretation key="0" text="Output push-pull (reset state)"/>
+			<interpretation key="1" text="Output open-drain"/>
+      	</field>
+      	<field bitoffset="14" name="OT14" bitlength="1">
+      		<description>Port D output type configuration bits
+These bits are written by software to configure the output type of the I/O port.
+0: Output push-pull (reset state)
+1: Output open-drain</description>
+			<interpretation key="0" text="Output push-pull (reset state)"/>
+			<interpretation key="1" text="Output open-drain"/>
+      	</field>
+      	<field bitoffset="15" name="OT15" bitlength="1">
+      		<description>Port D output type configuration bits
+These bits are written by software to configure the output type of the I/O port.
+0: Output push-pull (reset state)
+1: Output open-drain</description>
+			<interpretation key="0" text="Output push-pull (reset state)"/>
+			<interpretation key="1" text="Output open-drain"/>
+      	</field>
+      </register>
+      <register name="GPIOD_OSPEEDR" description="GPIO port output speed register" address="0x40020C08" access="rw" />
+      <register name="GPIOD_PUPDR" description="GPIO port pull-up/pull-down register" address="0x40020C0C" access="rw" />
+      <register name="GPIOD_IDR" description="GPIO port input data register" address="0x40020C10" access="rw" />
+      <register name="GPIOD_ODR" description="GPIO port output data register" address="0x40020C14" access="rw">
+      	<field bitoffset="0" name="IO Pins" bitlength="16">
+      		<description>All GPIO PortD Pins
+in one package...
+All pins are RW ... and so on and so on</description>
+      	</field>
+      	<field bitoffset="0" name="Pin_0" bitlength="1"/>
+      	<field bitoffset="1" name="Pin_1" bitlength="1"/>
+      	<field bitoffset="2" name="Pin_2" bitlength="1"/>
+      	<field bitoffset="3" name="Pin_3" bitlength="1"/>
+      	
+      	<field bitoffset="12" name="Pin_12" bitlength="1" board_id="STM32F4DISCOVERY" description="Green Led">
+      		<interpretation key="0" text="Green Led Off"/>
+      		<interpretation key="1" text="Green Led On"/>
+      	</field>
+      	<field bitoffset="13" name="Pin_13" bitlength="1" board_id="STM32F4DISCOVERY" description="Orange Led">
+      		<interpretation key="0" text="Orange Led Off"/>
+      		<interpretation key="1" text="Orange Led On"/>
+      	</field>
+      	<field bitoffset="14" name="Pin_14" bitlength="1" board_id="STM32F4DISCOVERY" description="Red Led">
+      		<interpretation key="0" text="Red Led Off"/>
+      		<interpretation key="1" text="Red Led On"/>
+      	</field>
+      	<field bitoffset="15" name="Pin_15" bitlength="1" board_id="STM32F4DISCOVERY" description="Blue Led">
+      		<interpretation key="0" text="Blue Led Off"/>
+      		<interpretation key="1" text="Blue Led On"/>
+      	</field>
+      </register>
+      <register name="GPIOD_BSRR" description="GPIO port bit set/reset low/High register" address="0x40020C18" access="rw" />
+      <register name="GPIOD_LCKR" description="GPIO port configuration lock register" address="0x40020C1C" access="rw" />
+      <register name="GPIOD_AFR1" description="GPIO alternate function registers" address="0x40020C20" access="rw" />
+      <register name="GPIOD_AFR2" description="GPIO alternate function registers" address="0x40020C24" access="rw" />
+    </registergroup>
+  </group>
+</model>
