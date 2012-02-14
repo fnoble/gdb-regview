@@ -3,10 +3,10 @@ Usage
 
 From gdb:
 
- source /path/to/gdb-regview.py
+`source /path/to/gdb-regview.py`
 
- regview load /path/to/definitions.xml
+`regview load /path/to/definitions.xml`
 
- regview show REGISTER_NAME
+`regview show REGISTER_NAME`
 
 
