@@ -6,6 +6,10 @@ class RegisterView:
     self.tree.parse(defs_file)
     self.reg_defs = self.tree.getiterator('register')
 
+  def find_registers(self, reg_name):
+    regs = filter(lambda x: x.attrib['name'].startswith(reg_name), self.reg_defs)
+    return map(lambda x: x.attrib['name'], regs)
+
   def get_reg_element(self, reg_name):
     return filter(lambda x: x.attrib['name'] == reg_name, self.reg_defs)[0]
 
