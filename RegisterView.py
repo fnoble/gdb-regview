@@ -30,6 +30,6 @@ class RegisterView:
       bit_len = int(field.attrib['bitlength'])
       bit_offset = int(field.attrib['bitoffset'])
       bit_name = field.attrib['name']
-      description = field.attrib['description']
+      description = field.attrib.get('description', 'no description')
       print "%s\t0x%X\t\t%s" % (bit_name, self.extract_bits(val, bit_len, bit_offset), description)
 
