@@ -32,14 +32,20 @@ class RegviewShowCommand(gdb.Command):
   
   def __init__(self):
     super (RegviewShowCommand, self).__init__ ("regview show",
-      gdb.COMMAND_SUPPORT,
-      gdb.COMPLETE_FILENAME)
+      gdb.COMMAND_SUPPORT)
 
   def invoke(self, arg, from_tty):
+    e = rv.get_reg_element(arg)
+    if e is None:
+      print "Unknown register %s" % arg
+      return
     addr = rv.get_reg_address(arg)
     buff = gdb.inferiors()[0].read_memory(addr, 4)
     val = struct.unpack("I", buff)[0]
     rv.print_reg(arg, val)
+
+  def complete(self, arg, from_tty):
+    return rv.find_registers(arg)
 
 RegviewPrefixCommand()
 RegviewLoadCommand()
