@@ -11,7 +11,11 @@ class RegisterView:
     return map(lambda x: x.attrib['name'], regs)
 
   def get_reg_element(self, reg_name):
-    return filter(lambda x: x.attrib['name'] == reg_name, self.reg_defs)[0]
+    elems = filter(lambda x: x.attrib['name'] == reg_name, self.reg_defs)
+    if len(elems) > 0:
+      return elems[0]
+    else:
+      return None
 
   def extract_bits(self, val, bit_len, bit_offset):
     return (val >> bit_offset) & ((1<<bit_len) - 1)

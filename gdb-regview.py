@@ -35,6 +35,10 @@ class RegviewShowCommand(gdb.Command):
       gdb.COMMAND_SUPPORT)
 
   def invoke(self, arg, from_tty):
+    e = rv.get_reg_element(arg)
+    if e is None:
+      print "Unknown register %s" % arg
+      return
     addr = rv.get_reg_address(arg)
     buff = gdb.inferiors()[0].read_memory(addr, 4)
     val = struct.unpack("I", buff)[0]
