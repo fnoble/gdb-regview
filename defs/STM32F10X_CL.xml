@@ -3228,13 +3228,13 @@ Connectivity line (CL) devices are STM32F105xx and STM32F107xx microcontrollers.
 			<interpretation key="1" text="PREDIV1 clock divided by 2 for PLL entry"/>
 		</field>
 		<field bitoffset="18" bitlength="4" name="PLLMULL" description="PLLMUL[3:0] bits (PLL multiplication factor)">
-			<interpretation key="2" text="PLL input clock * 4"/>
-			<interpretation key="3" text="PLL input clock * 5"/>
-			<interpretation key="4" text="PLL input clock * 6"/>
-			<interpretation key="5" text="PLL input clock * 7"/>
-			<interpretation key="6" text="PLL input clock * 8"/>
-			<interpretation key="7" text="PLL input clock * 9"/>
-			<interpretation key="13" text="PLL input clock * 6.5"/>
+			<interpretation key="2" text="PLL input clock*4"/>
+			<interpretation key="3" text="PLL input clock*5"/>
+			<interpretation key="4" text="PLL input clock*6"/>
+			<interpretation key="5" text="PLL input clock*7"/>
+			<interpretation key="6" text="PLL input clock*8"/>
+			<interpretation key="7" text="PLL input clock*9"/>
+			<interpretation key="13" text="PLL input clock*6.5"/>
 		</field>
 		<field bitoffset="22" bitlength="1" name="OTGFSPRE" description="USB OTG FS prescaler" />
 		<field bitoffset="24" bitlength="4" name="MCO" description="MCO[3:0] bits (Microcontroller Clock Output)">
