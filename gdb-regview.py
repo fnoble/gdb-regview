@@ -1,6 +1,6 @@
 import gdb
 import struct
-import sys 
+import sys
 import os
 
 sys.path.insert(0, os.path.dirname(os.path.realpath(__file__)))
@@ -18,7 +18,7 @@ class RegviewPrefixCommand (gdb.Command):
 
 class RegviewLoadCommand(gdb.Command):
   "Load register definitions from XML file."
-  
+
   def __init__(self):
     super (RegviewLoadCommand, self).__init__ ("regview load",
       gdb.COMMAND_SUPPORT,
@@ -29,7 +29,7 @@ class RegviewLoadCommand(gdb.Command):
 
 class RegviewShowCommand(gdb.Command):
   "Show the value of a register."
-  
+
   def __init__(self):
     super (RegviewShowCommand, self).__init__ ("regview show",
       gdb.COMMAND_SUPPORT)
@@ -51,3 +51,6 @@ RegviewPrefixCommand()
 RegviewLoadCommand()
 RegviewShowCommand()
 
+if __name__ == '__main__':
+  print 'Loaded', __file__
+  print 'Type "regview <tab>" to see available commands.'
