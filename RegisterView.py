@@ -1,17 +1,26 @@
 from xml.etree.ElementTree import ElementTree
+from os import path
 
 class RegisterView:
   def load_definitions(self, defs_file):
     self.tree = ElementTree()
-    self.tree.parse(defs_file)
+    self.tree.parse(path.expanduser(defs_file))
+    reggroups = self.tree.findall(".//registergroup")
+    for rg in reggroups:
+      # Create a full name for the register based on the register group
+      for r in rg.findall('./register'):
+        fullname = rg.attrib['name'] + '_' + r.attrib['name'].split('_',1)[1]
+        r.set('fullname',fullname)
+
     self.reg_defs = self.tree.getiterator('register')
+    print "Loaded register definitions:", path.expanduser(defs_file)
 
   def find_registers(self, reg_name):
-    regs = filter(lambda x: x.attrib['name'].startswith(reg_name), self.reg_defs)
-    return map(lambda x: x.attrib['name'], regs)
+    regs = filter(lambda x: x.attrib['fullname'].startswith(reg_name), self.reg_defs)
+    return map(lambda x: x.attrib['fullname'], regs)
 
   def get_reg_element(self, reg_name):
-    elems = filter(lambda x: x.attrib['name'] == reg_name, self.reg_defs)
+    elems = filter(lambda x: x.attrib['fullname'] == reg_name, self.reg_defs)
     if len(elems) > 0:
       return elems[0]
     else:
