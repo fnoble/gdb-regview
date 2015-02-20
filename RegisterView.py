@@ -7,9 +7,13 @@ class RegisterView:
     self.tree.parse(path.expanduser(defs_file))
     reggroups = self.tree.findall(".//registergroup")
     for rg in reggroups:
-      # Create a full name for the register based on the register group
+      # Create a full name for the register based on the register group if required
+      # Some registers don't use the base/group name, so fall back to register name
       for r in rg.findall('./register'):
-        fullname = rg.attrib['name'] + '_' + r.attrib['name'].split('_',1)[1]
+        try:
+          fullname = rg.attrib['name'] + '_' + r.attrib['name'].split('_',1)[1]
+        except:
+          fullname = r.attrib['name']
         r.set('fullname',fullname)
 
     self.reg_defs = self.tree.getiterator('register')
